@@ -3,7 +3,6 @@ html {
     background-size: contain;
     filter: saturate(110%) contrast(120%);
     background-color: #020223;
-/*    width: fit-content;*/
 }
 
 body {
@@ -83,7 +82,7 @@ main {
 }
 
 
-img.simple {
+img.simple2 {
     filter: drop-shadow(16px 16px 20px #a882e2);
     border:4px solid #3e2269;
     opacity: 0.8;
@@ -92,7 +91,7 @@ img.simple {
     cursor: pointer;
 }
 
-img.simple:hover {
+img.simple2:hover {
     filter: drop-shadow(16px 16px 20px #b3a5ed);
     border: 4px solid white;
     opacity: 1;
@@ -257,16 +256,6 @@ section {
     padding: 2rem;
 }
 
-.space {
-    background: 
-    url('../images/rocket_big.png') no-repeat center, 
-    url('../images/space.jpg') no-repeat bottom center;
-    float: left;
-    width:  8rem;   
-    height:  8rem;
-    border-radius: 50%;
-    margin-right: 15px;
-}
 
 section.work-experience{
     margin-top: 2rem;
@@ -308,7 +297,7 @@ tfoot th {
 }
 
 thead, tfoot {
-    background-image: url('../images/tableImage.png');
+    background-image: url('../images/tableImage.PNG');
     color: #fff;
     text-shadow: 1px 1px 1px black
 }
@@ -426,6 +415,26 @@ p {
 }
 
 
+img.simple {
+    width: 200px;
+    height: 300px;
+}
+
+img.simple2 {
+    width: 150px;
+}
+
+iframe {
+    border:0; 
+    width: 100%; 
+    filter: invert(90%);
+}
+
+headerH1 {
+    display: inline-block;
+}
+
+
 @media (max-width: 1280px) {
   .header_line {
     background: #1e1e1e;
@@ -458,8 +467,10 @@ a.items2 {
 
 .headerH1 {
     padding-top: 80px;
-    font-size: 25px;
+    font-size: 15px;
+    display: block;
 }
+
 
 h2 {
     font-size: 20px;
@@ -482,6 +493,10 @@ p {
     font-size: 10px;
     color: #b3b3b3;
 }
+
+.headerLi {
+        text-align: left;
+    }
 
 }
 
@@ -537,7 +552,7 @@ header.main-header {
 }
 
 li {
-    font-size: 10px;
+    font-size: 4px;
 }
 
 .header_line {
@@ -549,5 +564,34 @@ p {
     color: #b3b3b3;
 }
 
+th, td {
+    font-size: 4px;
 }
 
+img {
+    width: 100px;
+    height: 150px;
+}
+
+section {
+    padding: 1rem;
+}
+
+caption {
+    font-size: 5px;
+}
+
+.headerLi {
+    text-align: center;
+}
+
+
+}
+
+
+@media (max-width: 300px) {
+    img.simple {
+        width: 100px;
+        height: 150px;
+    }
+}

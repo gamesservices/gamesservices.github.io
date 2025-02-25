@@ -1,0 +1,553 @@
+html {
+    background-image: url('../images/backgroud_graffiti.jpg');
+    background-size: contain;
+    filter: saturate(110%) contrast(120%);
+    background-color: #020223;
+/*    width: fit-content;*/
+}
+
+body {
+    font-family: 'Graffiti font', sans-serif;
+    margin: 0;
+}
+
+
+h1 {
+    padding-bottom: 30px;
+    border-bottom:  solid 3px rgb(112, 128, 144);
+}
+
+section {
+    padding: 2rem;
+}
+
+section.summary {
+    padding: 2rem;
+    text-shadow: 1px 1px 2px pink;
+}
+
+section.work-experience{
+    margin-top: 2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid #ff00ff40;
+    table-layout: fixed;
+}
+
+.work-experience-years-col {
+    width: 15%;
+}
+
+.work-experience-job-title-col {
+    width: 20%;
+}
+
+.work-experience-comment-col {
+    width: 65%;
+}
+
+th {
+    letter-spacing: 2px; 
+    padding: 20px;
+    text-align: left;
+}
+
+td {
+    letter-spacing: 1px; 
+    padding: 20px;
+    text-align: left;
+}
+
+tfoot th {
+    text-align: right;
+}
+
+
+caption {
+    padding: 20px;
+    caption-side: bottom;
+    color: rgb(102, 102, 102);
+    font-style: italic;
+    text-align: right;
+    letter-spacing: 1px;
+}
+
+
+main {
+    background: linear-gradient(99.9deg, rgb(14, 13, 33,0.9) 21.2%, rgb(14, 14, 33,0.9) 84.8%);
+    color: white;
+    box-shadow: inset 0px -9px 20px rgb(27 85 139), inset 0 0 20px rgb(66 0 255), inset 0 0 0px rgb(83, 94, 104), inset 0 0 0px rgb(86, 96, 106);
+}
+
+
+img.simple {
+    filter: drop-shadow(16px 16px 20px #a882e2);
+    border:4px solid #3e2269;
+    opacity: 0.8;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    cursor: pointer;
+}
+
+img.simple:hover {
+    filter: drop-shadow(16px 16px 20px #b3a5ed);
+    border: 4px solid white;
+    opacity: 1;
+    transform: rotateY(180deg);
+}
+
+.section-summary {
+    border-right: solid 2px #708090;
+}
+
+@-webkit-keyframes wave {
+    from {
+        -webkit-mask-position: 150%;
+    }
+    to {
+        -webkit-mask-position: -50%;
+    }
+}
+
+li.section-summary strong{
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 30%, #000 50%, rgba(0, 0, 0, .6) 70%);
+    -webkit-mask-size: 200%;
+    animation: wave 2s infinite;
+}
+
+nav a {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 35px;
+}
+
+.header_line {
+    display: flex;
+    width: 100%;
+    background: #201821d4;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown{
+    position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+ display: none;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+nav ul li {
+    padding: 0 var(--space-size);
+}
+
+
+a, a h4 {
+    color: rgb(180 137 206);
+    text-decoration: none;
+}
+
+a:hover, a h4:hover {
+    color: #9150ae;
+}
+
+
+a.scaled {
+    display: inline-block;
+    transition: .1s ease-in-out;
+    transform: rotate(2deg) ;
+    color: white;
+}
+
+a.scaled:hover {
+    transform: scale(1.1);
+    color: #15fdfdeb !important;
+}
+
+
+header.main-header {
+    color: #fff;
+    background-image: url('../images/ps10.jpg');
+    background-color: #241524;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    padding: 2rem;
+/*    opacity: 0.70;*/
+    box-shadow: inset 14px 4px 20px rgb(99 67 193), inset 0 0 25px rgb(66 0 255), inset 0 0 25px rgb(83, 94, 104), inset 0 0 25px rgb(86, 96, 106);
+}
+
+
+
+
+.main-footer {
+    background-image: linear-gradient(99.9deg, rgb(3 8 20) 21.2%, rgb(14 0 58) 84.8%);
+    color: #fff;
+    padding: 2rem;
+}
+
+
+
+
+
+.summary-header, .work-header {
+    display: flex;
+}
+
+.summary-header h2:hover, .work-header h2:hover {
+    animation-name: shake;
+    animation-duration: 1s;
+}
+
+@keyframes shake {
+    20% {
+        transform: rotate(4deg);
+    }
+    40% {
+        transform: rotate(-3deg);
+    }
+    60% {
+        transform: rotate(2deg);
+    }
+    80% {
+        transform: rotate(-1deg);
+    }
+}
+
+
+
+
+.main-quote {
+    margin: 120px 0 0 0;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #00ffe2;
+    padding-left: 75%;
+    opacity: 0.3;
+}
+
+
+
+section {
+    padding: 2rem;
+}
+
+.space {
+    background: 
+    url('../images/rocket_big.png') no-repeat center, 
+    url('../images/space.jpg') no-repeat bottom center;
+    float: left;
+    width:  8rem;   
+    height:  8rem;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+section.work-experience{
+    margin-top: 2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #f0c50096;
+    table-layout: fixed;
+}
+
+.work-experience-years-col {
+    width: 15%;
+}
+
+.work-experience-job-title-col {
+    width: 20%;
+}
+
+.work-experience-comment-col {
+    width: 65%;
+}
+
+th {
+    letter-spacing: 2px; 
+    padding: 20px;
+    text-align: left;
+}
+
+td {
+    letter-spacing: 1px; 
+    padding: 20px;
+    text-align: left;
+}
+
+tfoot th {
+    text-align: right;
+}
+
+thead, tfoot {
+    background-image: url('../images/tableImage.PNG');
+    color: #fff;
+    text-shadow: 1px 1px 1px black
+}
+
+
+caption {
+    padding: 20px;
+    caption-side: bottom;
+    color: rgb(102, 102, 102);
+    font-style: italic;
+    text-align: right;
+    letter-spacing: 1px;
+}
+
+
+pre {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    margin: 1rem 0 0 1rem;
+    width: fit-content;
+    padding: 1.7rem;
+    background-color: #201d26;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5); 
+}
+code {
+    font-family: 'Graffiti font', sans-serif;
+    font-weight: 400;
+}
+
+
+.lineOfCode {
+  animation: typingEffect 1800ms steps(34, end) forwards 2000ms,
+  caretAnim 500ms steps(4, end) 0s infinite;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  width: 0;
+  height: auto;
+  border-right: 2px solid #ffffff;
+}
+.lineOfCode:nth-of-type(2) {
+  
+  animation-delay: 3100ms;
+}
+.lineOfCode:nth-of-type(3) {
+  
+  animation-delay: 5200ms;
+}
+
+
+
+@keyframes typingEffect {
+    0% {
+        border-width: 2px;
+    }
+    5% {
+        width: 0;
+        height: auto;
+        border-width: 2px;
+    }
+    93% {
+        border-width: 2px;
+    }
+    100% {
+        width: 18ch;
+        height: auto;
+        border-width: 0;
+    }
+}
+
+@keyframes caretAnim {
+    0% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #ffffff;
+    }
+    100% {
+        border-color: transparent;
+    }
+}
+
+
+
+.scale {
+    display: inline-block; /* Строчно-блочный элемент */
+    overflow: hidden; /* Скрываем всё за контуром */
+}
+.scale img.simple {
+    transition: 1s; /* Время эффекта */
+    display: block; /* Убираем небольшой отступ снизу */
+}
+.scale img.simple:hover {
+    transform: scale(1.2); /* Увеличиваем масштаб */
+}
+
+
+.lang {
+    cursor: pointer;
+}
+
+.card {
+    display: inline; 
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 20px;
+    color: #b3b3b3;
+}
+
+
+@media (max-width: 1280px) {
+  .header_line {
+    background: #1e1e1e;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    height: 5%;
+}
+
+   nav a {
+    font-size: 10px;
+
+}
+
+.items2 {
+    display: none;
+}
+
+a.items2 {
+    display: none;
+}
+
+
+.lineOfCode {
+    animation: none; 
+}
+
+.headerH1 {
+    padding-top: 80px;
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+header.main-header {
+background-size: 100%;
+}
+
+
+li {
+    font-size: 15px;
+}
+
+p {
+    font-size: 10px;
+    color: #b3b3b3;
+}
+
+}
+
+
+@media (max-width: 600px) {
+  .header_line {
+    background: #1e1e1e;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+   nav a {
+    font-size: 5px;
+
+}
+
+
+.items3 {
+    display: none;
+}
+
+a.items3 {
+    display: none;
+}
+
+.lang img {
+    display: none;
+}
+
+.main-quote {
+    display: none;
+}
+
+
+.lineOfCode {
+    animation: none; 
+}
+
+h2 {
+    font-size: 15px;
+}
+
+h3 {
+    font-size: 10px;
+}
+
+header.main-header {
+    background-size: 100%;
+}
+
+li {
+    font-size: 10px;
+}
+
+.header_line {
+    height: 1px;
+}
+
+p {
+    font-size: 5px;
+    color: #b3b3b3;
+}
+
+}
+

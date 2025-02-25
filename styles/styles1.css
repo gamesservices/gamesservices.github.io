@@ -308,7 +308,7 @@ tfoot th {
 }
 
 thead, tfoot {
-    background-image: url('../images/tableImage.PNG');
+    background-image: url('../images/tableImage.png');
     color: #fff;
     text-shadow: 1px 1px 1px black
 }

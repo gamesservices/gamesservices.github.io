@@ -34,7 +34,7 @@ tfoot th { text-align: right;}
 
 
 thead, tfoot {
-    background-image: url('../images/tableImage.jpg');
+    background-image: url('../images/tableImage.webp');
     color: #fff;
     text-shadow: 1px 1px 1px black
 }

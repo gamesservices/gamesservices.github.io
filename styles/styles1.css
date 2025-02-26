@@ -1,6 +1,6 @@
 html {
     font-family: serif;
-    background-image: url('../images/backgroud_graffiti.jpg');
+    background-image: url('../images/backgroud_graffiti.webp');
     background-size: contain;
     filter: saturate(110%) contrast(120%);
     background-color: #020223;
@@ -159,7 +159,7 @@ a.scaled:hover {
 
 header.main-header {
     color: #fff;
-    background-image: url('../images/ps10.jpg');
+    background-image: url('../images/ps10.webp');
     background-color: #241524;
     background-size: 70%;
     background-repeat: no-repeat;

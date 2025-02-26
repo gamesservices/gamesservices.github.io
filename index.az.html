@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Play station games Baku">
-    <meta name="keywords" content="Playstation, PS3, PS4, PS5, Games, Consoles, Gamepad, Baku, Azerbaijan, Oyunlar">
+    <meta name="keywords" content="Playstation, PS, ps, PS3, PS4, PS5, Games, Consoles, Gamepad, Baku, Azerbaijan, Oyunlar">
     <meta name="author" content="Samoilov Ilya">
     <link rel="icon" href="images/ps10.ico" type="image/x-icon">
-    <link href="https://fonts.cdnfonts.com/css/graffiti-font" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles1.css">
-<!-- <base href="http://www.example.com/"> -->
+    <link rel="stylesheet" href="styles/stylesTable.css">
+    <link rel="preload" fetchpriority="high" as="image" href="/images/ps10.webp" type="image/webp">
 </head>
 <body>
     <header class="main-header">
@@ -21,33 +21,30 @@
                 <pre class="items2 items3"><code id="codeBlock"><div class="lineOfCode">Ganjilik services</div></code></pre>
             </li>
             <li class="items2 items3 card">
-                <figure style="display: inline-block; position: absolute; top: 80px; right: 3%;" >
+                <figure>
                     <a href="#">
-                        <img class="simple2" style="border-radius: 10%;" src="images/ps11.jpg" alt="Photo">
+                        <img class="simple2" loading="lazy" style="border-radius: 10%;" src="images/ps11.jpg" alt="Photo">
                         <h4>Ganjilik services</h4>
                     </a>
                 </figure>
             </li>
         </ul>
-
     </header>
-
     <main>
-
         <section class="header_line">
             <nav class="nav_top">
                 <ul>
-                    <li><a class="scaled" href="#info" style="color: #b3b3b3;">Melumat</a></li>
-                    <li><a class="scaled items3" href="#consoles" style="color: #b3b3b3;">Konsollar</a></li>
-                    <li><a class="scaled items3" href="#games" style="color: #b3b3b3;">Oyunlar</a></li>
-                    <li><a class="scaled items2 items3" style="color: #b3b3b3;" href="#bestgames">Reytinq oyunlari</a></li>
-                    <li><a class="scaled" href="#map" style="color: #b3b3b3;">Xerite</a></li>
-                    <li><a class="scaled" href="#contacts" style="color: #b3b3b3;">Elaqeler</a></li>
+                    <li><a class="scaled" href="#info" style="color: #b3b3b3;">Info</a></li>
+                    <li><a class="scaled items3" href="#consoles" style="color: #b3b3b3;">Consoles</a></li>
+                    <li><a class="scaled items3" href="#games" style="color: #b3b3b3;">Games</a></li>
+                    <li><a class="scaled items2 items3" style="color: #b3b3b3;" href="#bestgames">Top rating games</a></li>
+                    <li><a class="scaled" href="#map" style="color: #b3b3b3;">Map</a></li>
+                    <li><a class="scaled" href="#contacts" style="color: #b3b3b3;">Contacts</a></li>
                     <li>
                         <ul class="dropdown lang">
-                            <img loading="lazy" decoding="async" src="images/az.png" style="color:transparent" class="items2 items3"><a href="#">Az</a>
+                            <img loading="lazy"  decoding="async" src="images/uk.png" style="color:transparent" class="items2 items3"><a href="#">En</a>
                             <div class="dropdown-content"> 
-                                <li class="lang"><img loading="lazy" decoding="async" src="images/uk.png" style="color:transparent" class="items2 items3"><a href="index.html" >En</a></li>
+                                <li class="lang"><img loading="lazy" decoding="async" src="images/az.png" style="color:transparent" class="items2 items3"><a href="index.az.html" >Az</a></li>
                             </div>
                         </ul>
 
@@ -55,15 +52,14 @@
                 </ul>
             </nav>
         </section>
-
         <section class="info" id="info">
             <div class="summary-header">
-                <h2>Melumat</h2>
+                <h2>Info</h2>
             </div>
             <p>    
                 <ul>  
                     <li class="section-summary">           
-                        <h3 style="text-decoration: underline; color: #c096ff;">Header 1</h3>
+                        <h3 style="color: #c096ff;">Header 1</h3>
                         <br>
                         <ul style="list-style: none;">  
                             <li style="color: #e3d7f5;">- Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Facilis eius exercitationem dicta aliquid adipisci dolorem praesentium! Temporibus incidunt fugit atque suscipit quam consequuntur totam eius, autem corrupti perferendis, blanditiis aspernatur! <strong style="text-decoration: underline;"> XBOX </strong>, <strong style="text-decoration: underline;"> PS3 </strong>, <strong style="text-decoration: underline;">PS4</strong>, <strong style="text-decoration: underline;">PS5</strong>
@@ -72,22 +68,18 @@
                             </li>
                         </ul>  
                     </li>
-
                     <br>
-
                     <li class="section-summary">
-                        <h3 style="text-decoration: underline; color: #889cf7;">Header 2</h3>
+                        <h3 style="color: #889cf7;">Header 2</h3>
                         <br>
                         <ul style="list-style: none;">  
                             <li style="color: #d7ddf9;">- Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Facilis eius exercitationem dicta aliquid adipisci dolorem praesentium! Temporibus incidunt fugit atque suscipit quam consequuntur totam eius, autem corrupti perferendis, blanditiis aspernatur! <strong style="text-decoration: underline;"> XBOX </strong>, <strong style="text-decoration: underline;"> PS3 </strong>, <strong style="text-decoration: underline;">PS4</strong>, <strong style="text-decoration: underline;">PS5</strong>
                             </li>
                         </ul> 
                     </li>
-
                     <br>
-
                     <li class="section-summary">
-                        <h3 style="text-decoration: underline; color: #5ad3ff;">Header 3 </h3> 
+                        <h3 style="color: #5ad3ff;">Header 3 </h3> 
                         <br>
                         <ul style="list-style: none;">  
                             <li style="color: #cdf2ff;">- Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Fuga molestiae eligendi mollitia iure animi maiores perferendis alias, quis vitae placeat, cupiditate odit accusantium ipsa quam molestias aliquid ratione praesentium vero.
@@ -97,31 +89,23 @@
                 </ul>  
             </p>
         </section>
-
-
         <section class="consoles" id="consoles">
             <div class="work-header">
-                <h2>Konsollar</h2>
+                <h2>Consoles</h2>
             </div>
-
-            <div class="scale"><img class="simple" src="images/ps2.jpg" alt="PS5" class="scale" ></div>
-            <div class="scale"><img class="simple" src="images/ps4.jpg" alt="PS4" class="scale" ></div>
+            <div class="scale"><img class="simple" src="images/ps2.webp?format=webp" alt="PS5" class="scale" ></div>
+            <div class="scale"><img class="simple" src="images/ps4.webp?format=webp" alt="PS4" class="scale" ></div>
         </section>
-
-
         <section class="games" id="games">
             <div class="work-header">
-                <h2>Oyunlar</h2>
+                <h2>Games</h2>
             </div>
-
-            <div class="scale"><img class="simple" src="images/Farcry6.jpeg" alt="Farcry 6" class="scale" ></div>
-            <div class="scale"><img class="simple" src="images/WatchDogs2.jpg" alt="Watch Dogs 2" class="scale" ></div>
+            <div class="scale"><img class="simple" src="images/Farcry6.webp?format=webp" alt="Farcry 6" class="scale" ></div>
+            <div class="scale"><img class="simple" src="images/WatchDogs2.jpg?format=webp" alt="Watch Dogs 2" class="scale" ></div>
         </section>
-
-
         <section class="work-experience" id="bestgames">
             <div class="work-header">
-                <h2 style="color: #f0c500;">Reytinq oyunlari</h2>
+                <h2 style="color: #f0c500;">Top rating games</h2>
             </div>
             <table class="work-experience-table">
                 <caption>Chronologicaly</caption>
@@ -132,7 +116,6 @@
                         <th scope="col" class="work-experience-comment-col">Comment</th>
                     </tr>
                 </thead>
-
                 <tbody>
                     <tr>
                         <th scope="row">2020 - 2022</th>
@@ -145,7 +128,6 @@
                             </ul>
                         </td>
                     </tr>
-
                     <tr>
                         <th scope="row">2023 - 2024</th>
                         <td>Far cry 6</td>
@@ -158,7 +140,6 @@
                         </td>
                     </tr>
                 </tbody>
-
                 <tfoot>
                     <tr>
                         <th scope="row" colspan="1">Period</th>
@@ -167,22 +148,16 @@
                 </tfoot>
             </table>
         </section>
-
         <section class="map" id="map">
             <div >
-                <h2>Xerite</h2>
+                <h2>Place on map</h2>
             </div>
-
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d759.5823442028488!2d49.84796683199077!3d40.40155350794711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307dfeff225c43%3A0x61c60878f943fb15!2sG%C9%99nclik%20Servis%20Playstation!5e0!3m2!1sru!2saz!4v1740378107950!5m2!1sru!2saz" width="600" height="450" style="border:0; width: 100%; filter: invert(90%);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d759.5823442028488!2d49.84796683199077!3d40.40155350794711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307dfeff225c43%3A0x61c60878f943fb15!2sG%C9%99nclik%20Servis%20Playstation!5e0!3m2!1sru!2saz!4v1740378107950!5m2!1sru!2saz" title="map" width="600" height="450" style="border:0; width: 100%; filter: invert(90%);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
-
     </main>
-
-   <footer class="main-footer" id="contacts">
-        <p><a href="https://wa.me/+994xxxxxxxxx">Telefon: +994-xxx-xxx-xx</a> </p>
-        <p><a href="mailto:xxx@gmail.com">Poçt: xxx@gmail.com </a></p>
+    <footer class="main-footer" id="contacts">
+        <p><a href="https://wa.me/+994xxxxxxxxx">Phone: +994-xxx-xxx-xx</a> </p>
+        <p><a href="mailto:xxx@gmail.com">Mail: xxx@gmail.com </a></p>
     </footer>
-
 </body>
-
 </html>

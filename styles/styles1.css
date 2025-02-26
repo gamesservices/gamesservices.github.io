@@ -1,12 +1,21 @@
 html {
+    font-family: serif;
     background-image: url('../images/backgroud_graffiti.jpg');
     background-size: contain;
     filter: saturate(110%) contrast(120%);
     background-color: #020223;
 }
 
+@font-face {
+    font-family: 'Graffiti font';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Graffiti font'), url('https://fonts.cdnfonts.com/s/62247/Graffiti font.woff') format('woff');
+    font-display: fallback;
+}
+
 body {
-    font-family: 'Graffiti font', sans-serif;
+    font-family: 'Graffiti font';
     margin: 0;
 }
 
@@ -16,8 +25,6 @@ figure {
     top: 80px; 
     right: 3%;
 }
-
-
 
 h1 {
     padding-bottom: 30px;
@@ -35,55 +42,6 @@ section {
 section.summary {
     padding: 2rem;
     text-shadow: 1px 1px 2px pink;
-}
-
-section.work-experience{
-    margin-top: 2rem;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    border: 3px solid #ff00ff40;
-    table-layout: fixed;
-}
-
-.work-experience-years-col {
-    width: 15%;
-}
-
-.work-experience-job-title-col {
-    width: 20%;
-}
-
-.work-experience-comment-col {
-    width: 65%;
-}
-
-th {
-    letter-spacing: 2px; 
-    padding: 20px;
-    text-align: left;
-}
-
-td {
-    letter-spacing: 1px; 
-    padding: 20px;
-    text-align: left;
-}
-
-tfoot th {
-    text-align: right;
-}
-
-
-caption {
-    padding: 20px;
-    caption-side: bottom;
-    color: rgb(102, 102, 102);
-    font-style: italic;
-    text-align: right;
-    letter-spacing: 1px;
 }
 
 
@@ -174,9 +132,7 @@ nav ul {
     flex-wrap: nowrap;
 }
 
-nav ul li {
-    padding: 0 var(--space-size);
-}
+nav ul li { padding: 0 var(--space-size);}
 
 
 a, a h4 {
@@ -201,7 +157,6 @@ a.scaled:hover {
     color: #15fdfdeb !important;
 }
 
-
 header.main-header {
     color: #fff;
     background-image: url('../images/ps10.jpg');
@@ -209,11 +164,8 @@ header.main-header {
     background-size: 70%;
     background-repeat: no-repeat;
     padding: 2rem;
-/*    opacity: 0.70;*/
-box-shadow: inset 14px 4px 20px rgb(99 67 193), inset 0 0 25px rgb(66 0 255), inset 0 0 25px rgb(83, 94, 104), inset 0 0 25px rgb(86, 96, 106);
+    box-shadow: inset 14px 4px 20px rgb(99 67 193), inset 0 0 25px rgb(66 0 255), inset 0 0 25px rgb(83, 94, 104), inset 0 0 25px rgb(86, 96, 106);
 }
-
-
 
 
 .main-footer {
@@ -221,9 +173,6 @@ box-shadow: inset 14px 4px 20px rgb(99 67 193), inset 0 0 25px rgb(66 0 255), in
     color: #fff;
     padding: 2rem;
 }
-
-
-
 
 
 .summary-header, .work-header {
@@ -250,9 +199,6 @@ box-shadow: inset 14px 4px 20px rgb(99 67 193), inset 0 0 25px rgb(66 0 255), in
     }
 }
 
-
-
-
 .main-quote {
     margin: 120px 0 0 0;
     font-style: italic;
@@ -262,68 +208,9 @@ box-shadow: inset 14px 4px 20px rgb(99 67 193), inset 0 0 25px rgb(66 0 255), in
     opacity: 0.3;
 }
 
-
-
 section {
     padding: 2rem;
 }
-
-
-section.work-experience{
-    margin-top: 2rem;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    border: 2px solid #f0c50096;
-    table-layout: fixed;
-}
-
-.work-experience-years-col {
-    width: 15%;
-}
-
-.work-experience-job-title-col {
-    width: 20%;
-}
-
-.work-experience-comment-col {
-    width: 65%;
-}
-
-th {
-    letter-spacing: 2px; 
-    padding: 20px;
-    text-align: left;
-}
-
-td {
-    letter-spacing: 1px; 
-    padding: 20px;
-    text-align: left;
-}
-
-tfoot th {
-    text-align: right;
-}
-
-thead, tfoot {
-    background-image: url('../images/tableImage.jpg');
-    color: #fff;
-    text-shadow: 1px 1px 1px black
-}
-
-
-caption {
-    padding: 20px;
-    caption-side: bottom;
-    color: rgb(102, 102, 102);
-    font-style: italic;
-    text-align: right;
-    letter-spacing: 1px;
-}
-
 
 pre {
     font-size: 1rem;
@@ -351,12 +238,12 @@ code {
   height: auto;
   border-right: 2px solid #ffffff;
 }
-.lineOfCode:nth-of-type(2) {
 
+.lineOfCode:nth-of-type(2) {
   animation-delay: 3100ms;
 }
-.lineOfCode:nth-of-type(3) {
 
+.lineOfCode:nth-of-type(3) {
   animation-delay: 5200ms;
 }
 
@@ -391,7 +278,6 @@ code {
         border-color: transparent;
     }
 }
-
 
 
 .scale {
@@ -460,7 +346,6 @@ headerH1 {
 
 nav a {
     font-size: 10px;
-
 }
 
 .items2 {
@@ -470,7 +355,6 @@ nav a {
 a.items2 {
     display: none;
 }
-
 
 .lineOfCode {
     animation: none; 
@@ -495,7 +379,6 @@ header.main-header {
     background-size: 100%;
 }
 
-
 li {
     font-size: 15px;
 }
@@ -507,8 +390,7 @@ p {
 
 .headerLi {
     text-align: left;
-}
-
+    }
 }
 
 
@@ -525,9 +407,7 @@ p {
 
 nav a {
     font-size: 5px;
-
 }
-
 
 .items3 {
     display: none;
@@ -575,9 +455,6 @@ p {
     color: #b3b3b3;
 }
 
-th, td {
-    font-size: 12px;
-}
 
 img {
     width: 100px;
@@ -599,7 +476,6 @@ caption {
 .main-footer {
     padding: 1rem;
     }
-
 }
 
 
@@ -609,3 +485,4 @@ caption {
         height: 150px;
     }
 }
+

@@ -1,0 +1,57 @@
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid #f0c50096;
+    table-layout: fixed;
+}
+
+.work-experience-years-col {
+    width: 15%;
+}
+
+.work-experience-job-title-col {
+    width: 20%;
+}
+
+.work-experience-comment-col {
+    width: 65%;
+}
+
+th {
+    letter-spacing: 2px; 
+    padding: 20px;
+    text-align: left;
+}
+
+td {
+    letter-spacing: 1px; 
+    padding: 20px;
+    text-align: left;
+}
+
+tfoot th { text-align: right;}
+
+
+thead, tfoot {
+    background-image: url('../images/tableImage.jpg');
+    color: #fff;
+    text-shadow: 1px 1px 1px black
+}
+
+section.work-experience{
+    margin-top: 2rem;
+}
+
+caption {
+    padding: 20px;
+    caption-side: bottom;
+    color: rgb(102, 102, 102);
+    font-style: italic;
+    text-align: right;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 600px) {
+    th, td { font-size: 12px; }
+}

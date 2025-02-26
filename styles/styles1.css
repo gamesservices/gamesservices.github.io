@@ -19,14 +19,44 @@ body {
     margin: 0;
 }
 
-figure {
+figure.simple2 {
     display: inline-block; 
     position: absolute; 
     top: 80px; 
     right: 3%;
 }
 
+.card {
+    display: inline; 
+    text-align: center;
+}
+
+.cardGame {
+    width: 200px;
+    height: 300px;
+    text-align: center;
+    display: inline-block;
+    background-color: #303030;
+    opacity: 0.8;
+    color: white;
+    padding-left: 5px;
+    border:  solid 3px black;
+    font-weight: 700;
+}
+
+.cardGame:hover {
+    background-color: white;
+    color: black;
+}
+
+.cardGame span {
+    display: inline-block;
+    padding-top: 70%;
+}
+
+
 h1 {
+    display: inline-block;
     padding-bottom: 30px;
     border-bottom:  solid 3px rgb(112, 128, 144);
 }
@@ -228,9 +258,7 @@ code {
 }
 
 
-.lineOfCode {
-  animation: typingEffect 1800ms steps(34, end) forwards 2000ms,
-  caretAnim 500ms steps(4, end) 0s infinite;
+.lineOfCode, .lineOfCode2 {
   overflow: hidden;
   padding: 0;
   margin: 0;
@@ -238,6 +266,17 @@ code {
   height: auto;
   border-right: 2px solid #ffffff;
 }
+
+.lineOfCode {
+    animation: typingEffect 1800ms steps(34, end) forwards 2000ms,
+    caretAnim 500ms steps(4, end) 0s infinite;
+}
+
+.lineOfCode2 {
+  animation: typingEffect2 1800ms steps(34, end) forwards 2000ms,
+  caretAnim 500ms steps(4, end) 0s infinite;
+}
+
 
 .lineOfCode:nth-of-type(2) {
   animation-delay: 3100ms;
@@ -261,11 +300,32 @@ code {
         border-width: 2px;
     }
     100% {
-        width: 18ch;
+        width: 16ch;
         height: auto;
         border-width: 0;
     }
 }
+
+
+@keyframes typingEffect2 {
+    0% {
+        border-width: 2px;
+    }
+    5% {
+        width: 0;
+        height: auto;
+        border-width: 2px;
+    }
+    93% {
+        border-width: 2px;
+    }
+    100% {
+        width: 14ch;
+        height: auto;
+        border-width: 0;
+    }
+}
+
 
 @keyframes caretAnim {
     0% {
@@ -284,10 +344,13 @@ code {
     display: inline-block; /* Строчно-блочный элемент */
     overflow: hidden; /* Скрываем всё за контуром */
 }
+
 .scale img.simple {
     transition: 1s; /* Время эффекта */
     display: block; /* Убираем небольшой отступ снизу */
+    padding-top: 5px;
 }
+
 .scale img.simple:hover {
     transform: scale(1.2); /* Увеличиваем масштаб */
 }
@@ -297,11 +360,6 @@ code {
     cursor: pointer;
 }
 
-.card {
-    display: inline; 
-    text-align: center;
-}
-
 h3 {
     font-size: 20px;
 }
@@ -309,6 +367,17 @@ h3 {
 p {
     font-size: 20px;
     color: #b3b3b3;
+}
+
+figure.simple1 {
+    margin: 5px;
+    display: inline-block;
+} 
+
+
+figcaption {
+    padding: 10px;
+    font-size: 12px;
 }
 
 

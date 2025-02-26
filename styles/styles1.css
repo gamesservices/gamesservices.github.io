@@ -1,6 +1,6 @@
 html {
     font-family: serif;
-    background-image: url('../images/backgroud_graffiti.webp');
+    background-image: url('../images/backgroud_graffiti.webp?format=webp');
     background-size: contain;
     filter: saturate(110%) contrast(120%);
     background-color: #020223;
@@ -79,6 +79,10 @@ main {
     background: linear-gradient(99.9deg, rgb(14, 13, 33,0.9) 21.2%, rgb(14, 14, 33,0.9) 84.8%);
     color: white;
     box-shadow: inset 0px -9px 20px rgb(27 85 139), inset 0 0 20px rgb(66 0 255), inset 0 0 0px rgb(83, 94, 104), inset 0 0 0px rgb(86, 96, 106);
+}
+
+strong {
+    text-decoration: underline;
 }
 
 
@@ -165,13 +169,18 @@ nav ul {
 nav ul li { padding: 0 var(--space-size);}
 
 
-a, a h4 {
+a, .titleSpan {
     color: rgb(180 137 206);
     text-decoration: none;
 }
 
-a:hover, a h4:hover {
+a:hover, .titleSpan:hover {
     color: #9150ae;
+}
+
+.titleSpan {
+    padding-top: 10px;
+    font-size: 16px;
 }
 
 
@@ -189,7 +198,7 @@ a.scaled:hover {
 
 header.main-header {
     color: #fff;
-    background-image: url('../images/ps10.webp');
+    background-image: url('../images/ps10.webp?format=webp');
     background-color: #241524;
     background-size: 70%;
     background-repeat: no-repeat;

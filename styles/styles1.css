@@ -10,10 +10,22 @@ body {
     margin: 0;
 }
 
+figure {
+    display: inline-block; 
+    position: absolute; 
+    top: 80px; 
+    right: 3%;
+}
+
+
 
 h1 {
     padding-bottom: 30px;
     border-bottom:  solid 3px rgb(112, 128, 144);
+}
+
+h3 {
+    text-decoration: underline;
 }
 
 section {
@@ -297,7 +309,7 @@ tfoot th {
 }
 
 thead, tfoot {
-    background-image: url('../images/tableImage.PNG');
+    background-image: url('../images/tableImage.jpg');
     color: #fff;
     text-shadow: 1px 1px 1px black
 }
@@ -340,14 +352,13 @@ code {
   border-right: 2px solid #ffffff;
 }
 .lineOfCode:nth-of-type(2) {
-  
+
   animation-delay: 3100ms;
 }
 .lineOfCode:nth-of-type(3) {
-  
+
   animation-delay: 5200ms;
 }
-
 
 
 @keyframes typingEffect {
@@ -587,7 +598,7 @@ caption {
 
 .main-footer {
     padding: 1rem;
-}
+    }
 
 }
 

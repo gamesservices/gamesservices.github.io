@@ -26,9 +26,34 @@ figure.simple2 {
     right: 3%;
 }
 
+.HeaderAz {
+    padding-top: 100px;
+}
+
+nav.az a {
+    font-size: 16px;
+}
+
 .card {
     display: inline; 
     text-align: center;
+}
+
+.sectionDivide {
+    padding: 0;
+    display: inline-block;
+    width: 100%;
+}
+
+.b-example-divider2 {
+    background-color: #1b1d28b8;
+    border-bottom: solid rgb(23 60 151 / 84%);
+    border-width: 4px 0;
+    box-shadow: inset 0px -1em 1.5em rgb(0 0 255), inset 0 0.125em 0.5em rgb(255 255 255);
+    padding: 20px;
+    padding-top: 30px;
+    text-align: center;
+    height: 40px;
 }
 
 .cardGame {
@@ -82,7 +107,7 @@ main {
 }
 
 strong {
-    text-decoration: underline;
+    color: #f0c500;
 }
 
 
@@ -247,9 +272,6 @@ header.main-header {
     opacity: 0.3;
 }
 
-section {
-    padding: 2rem;
-}
 
 pre {
     font-size: 1rem;
@@ -469,10 +491,16 @@ p {
 .headerLi {
     text-align: left;
     }
+
+nav.az a {
+    font-size: 10px;
+}
+
 }
 
 
 @media (max-width: 600px) {
+
   .header_line {
     background: #1e1e1e;
     width: 100%;
@@ -554,6 +582,16 @@ caption {
 .main-footer {
     padding: 1rem;
     }
+
+    .b-example-divider2 {
+    padding: 10px;
+    height: 60px;
+}
+
+nav.az a {
+    font-size: 6px;
+}
+
 }
 
 
@@ -562,5 +600,15 @@ caption {
         width: 100px;
         height: 150px;
     }
+
+    .b-example-divider2 {
+    padding: 10px;
+    height: 80px;
+}
+
+nav.az a {
+    font-size: 4px;
+}
+
 }
 

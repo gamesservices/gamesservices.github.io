@@ -2,7 +2,7 @@
 table {
     width: 100%;
     border-collapse: collapse;
-    border: 3px solid #f0c50096;
+    border: 3px solid #f0c500;
     table-layout: fixed;
 }
 
@@ -30,13 +30,11 @@ td {
     text-align: left;
 }
 
-tfoot th { text-align: right;}
-
 
 thead, tfoot {
     background-image: url('../images/tableImage.webp?format=webp');
     color: #fff;
-    text-shadow: 1px 1px 1px black
+    text-shadow: 1px 1px 1px black;
 }
 
 section.work-experience{

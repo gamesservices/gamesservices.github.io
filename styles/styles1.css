@@ -289,7 +289,7 @@ code {
 }
 
 
-.lineOfCode, .lineOfCode2 {
+.lineOfCode, .lineOfCode2, .lineOfCode3 {
   overflow: hidden;
   padding: 0;
   margin: 0;
@@ -308,12 +308,17 @@ code {
   caretAnim 500ms steps(4, end) 0s infinite;
 }
 
+.lineOfCode3 {
+  animation: typingEffect3 1800ms steps(34, end) forwards 2000ms,
+  caretAnim 500ms steps(4, end) 0s infinite;
+}
 
-.lineOfCode:nth-of-type(2) {
+
+.lineOfCode:nth-of-type(2), .lineOfCode2:nth-of-type(2), .lineOfCode3:nth-of-type(2) {
   animation-delay: 3100ms;
 }
 
-.lineOfCode:nth-of-type(3) {
+.lineOfCode:nth-of-type(3), .lineOfCode2:nth-of-type(3), .lineOfCode3:nth-of-type(3) {
   animation-delay: 5200ms;
 }
 
@@ -352,6 +357,26 @@ code {
     }
     100% {
         width: 18ch;
+        height: auto;
+        border-width: 0;
+    }
+}
+
+
+@keyframes typingEffect3 {
+    0% {
+        border-width: 2px;
+    }
+    5% {
+        width: 0;
+        height: auto;
+        border-width: 2px;
+    }
+    93% {
+        border-width: 2px;
+    }
+    100% {
+        width: 14ch;
         height: auto;
         border-width: 0;
     }

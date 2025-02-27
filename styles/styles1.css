@@ -11,7 +11,7 @@ html {
     font-style: normal;
     font-weight: 400;
     src: local('Graffiti font'), url('https://fonts.cdnfonts.com/s/62247/Graffiti font.woff') format('woff');
-    font-display: fallback;
+    font-display: swap;
 }
 
 body {

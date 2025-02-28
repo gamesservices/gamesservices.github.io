@@ -5,40 +5,19 @@ table {
     table-layout: fixed;
 }
 
-.work-experience-years-col {
-    width: 15%;
-}
+.work-experience-years-col {width: 15%;}
 
-.work-experience-job-title-col {
-    width: 20%;
-}
+.work-experience-job-title-col { width: 20%;}
 
-.work-experience-comment-col {
-    width: 65%;
-}
+.work-experience-comment-col { width: 65%; }
 
-th {
-    letter-spacing: 2px; 
-    padding: 20px;
-    text-align: left;
-}
+th { letter-spacing: 2px; padding: 20px; text-align: left;}
 
-td {
-    letter-spacing: 1px; 
-    padding: 20px;
-    text-align: left;
-}
+td { letter-spacing: 1px; padding: 20px; text-align: left;}
 
+thead, tfoot { background-image: url('../images/tableImage.webp?format=webp'); color: #fff; text-shadow: 1px 1px 1px black; }
 
-thead, tfoot {
-    background-image: url('../images/tableImage.webp?format=webp');
-    color: #fff;
-    text-shadow: 1px 1px 1px black;
-}
-
-section.work-experience{
-    margin-top: 2rem;
-}
+section.work-experience{margin-top: 2rem;}
 
 caption {
     padding: 20px;
@@ -49,6 +28,4 @@ caption {
     letter-spacing: 1px;
 }
 
-@media (max-width: 600px) {
-    th, td { font-size: 12px; }
-}
+@media (max-width: 600px) { th, td { font-size: 12px; }}

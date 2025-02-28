@@ -1,3 +1,7 @@
+@font-face { font-family: 'Graffiti font'; font-style: normal; font-weight: 400; src: local('Graffiti font'), url('https://fonts.cdnfonts.com/s/62247/Graffiti font.woff') format('woff'); font-display: fallback;}
+html {font-family: serif; background-image: url('images/backgroud_graffiti.webp?format=webp'); background-size: contain; filter: saturate(110%) contrast(120%); background-color: #020223;}
+body { font-family: 'Graffiti font'; margin: 0; }
+
 figure.simple2 {
 	display: inline-block; 
 	position: absolute; 
@@ -7,18 +11,16 @@ figure.simple2 {
 
 h1 { display: inline-block; padding-bottom: 30px; border-bottom:  solid 3px rgb(112, 128, 144);}
 nav a {font-size: 20px; font-weight: bold; padding-left: 10px; padding-right: 35px; }
-.header_line {display: flex;width: 100%;background: #201821d4;justify-content: space-between;align-items: center;position: fixed;top: 0;z-index: 1;}
+.header_line {display: flex;width: 100%; background: #201821d4; justify-content: space-between;align-items: center;position: fixed;top: 0;z-index: 1;}
 nav ul { display: flex; flex-wrap: nowrap;}
 nav ul li { padding: 0 var(--space-size);}
-ul {list-style: none;padding: 0;margin: 0;}
+ul {list-style: none; padding: 0; margin: 0;}
 a, .titleSpan { color: rgb(180 137 206); text-decoration: none; }
 a:hover, .titleSpan:hover {color: #9150ae;}
 .titleSpan {padding-top: 10px; font-size: 16px;}
 a.scaled {display: inline-block;transition: .1s ease-in-out; transform: rotate(2deg);color: white;}
 a.scaled:hover { transform: scale(1.1); color: #15fdfdeb !important;}
-header.main-header {color: #fff; background-image: url('../images/ps10.webp?format=webp');
-	background-color: #241524;background-size: 70%;background-repeat: no-repeat;
-	padding: 2rem;box-shadow: inset 14px 4px 20px rgb(99 67 193), inset 0 0 25px rgb(66 0 255), inset 0 0 25px rgb(83, 94, 104), inset 0 0 25px rgb(86, 96, 106);}
+header.main-header {color: #fff; background-image: url('../images/ps10.webp?format=webp'); background-color: #241524;background-size: 70%;background-repeat: no-repeat; padding: 2rem;box-shadow: inset 14px 4px 20px rgb(99 67 193), inset 0 0 25px rgb(66 0 255), inset 0 0 25px rgb(83, 94, 104), inset 0 0 25px rgb(86, 96, 106);}
 
 table, iframe {display: none;}
 

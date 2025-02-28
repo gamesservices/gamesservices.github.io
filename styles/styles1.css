@@ -5,9 +5,11 @@ top: 80px;
 right: 3%;
 }
 
-table {display: none;}
+table, iframe {display: none;}
 
-#tblBtn:hover {color: #f0c500e3;}
+.tblBtn:hover {color: #f0c500;}
+
+.mapBtn:hover {color: #b489ce;}
 
 .HeaderAz {padding-top: 100px;}
 
@@ -295,7 +297,7 @@ border-width: 0;
 
 .scale img.simple:hover {transform: scale(1.2);}
 
-.lang, #tblBtn {cursor: pointer;}
+.lang, .tblBtn, .mapBtn {cursor: pointer;}
 
 h3 {
 font-size: 20px;

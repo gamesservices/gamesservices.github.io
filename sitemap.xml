@@ -5,22 +5,22 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
-  <loc>https://ganjlikservices.github.io/</loc>
+  <loc>https://gamesservices.github.io</loc>
   <lastmod>2025-02-25T09:05:44+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://ganjlikservices.github.io/index.az.html</loc>
+  <loc>https://gamesservices.github.io/index.az.html</loc>
   <lastmod>2025-02-25T09:05:44+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://ganjlikservices.github.io/index.html</loc>
+  <loc>https://gamesservices.github.io/index.html</loc>
   <lastmod>2025-02-25T09:05:44+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://ganjlikservices.github.io/games.html</loc>
+  <loc>https://gamesservices.github.io/games.html</loc>
   <lastmod>2025-02-25T09:05:44+00:00</lastmod>
   <priority>0.40</priority>
 </url>

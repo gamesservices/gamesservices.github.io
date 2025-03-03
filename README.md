@@ -1,1 +1,1 @@
-# [Ganjlik services](https://ganjlikservices.github.io/)
+# [Games services](https://ganjlikservices.github.io/)

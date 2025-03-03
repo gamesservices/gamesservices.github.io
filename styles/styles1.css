@@ -4,6 +4,12 @@ html {
 	background-size: contain;
 	filter: saturate(110%) contrast(120%);
 	background-color: #020223;
+	height: 100%;
+}
+
+body {
+	height: 100%;
+    display: grid;
 }
 
 @font-face {
@@ -385,11 +391,11 @@ headerH1 { display: inline-block;}
 
 	header.main-header {background-size: 100%;}
 
-	li {font-size: 12px;}
+	li {font-size: 8px;}
 
 	.header_line {height: 1px;}
 
-	p {font-size: 12px; color: #b3b3b3;}
+	p {font-size: 6px; color: #b3b3b3;}
 
 	img {
 		width: 100px;
@@ -422,6 +428,8 @@ headerH1 { display: inline-block;}
 		padding: 10px;
 		height: 80px;
 	}
+
+	p {font-size: 4px; color: #b3b3b3;}
 
 	nav.az a {font-size: 4px;}
 }
